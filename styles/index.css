@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    
+    border-bottom: 1px solid;
+    width: 100%;
+}
+a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px ;
+    color: black;
+}
+nav>a{
+    
+    height: 100%;
+    width: 100%;
+  
+}
+nav>a:hover, nav>a:focus{
+background-color: aliceblue;
+}
+header{
+    background-size: 70%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+
+    
+}
+.logoPorsche{
+    position: relative;
+    height: 150px;
+    margin: 20px;
+}
+h1{
+    font-size: 50px;
+}
+.sectCarousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    margin-top: 3%;
+    font-size: 40px;
+    font-weight: bold;
+}
+#sectLink{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgSecLink{
+    width: 70%;
+    align-items: center;
+}
+.floatLink{
+    margin-top: 10%;
+}
+footer{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgSpace{
+    align-self: flex-start;
+    height: 400px;
+    width: 50%;
+}
+.sectFoot{
+    margin-top: 2% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.map{
+    height: 400px;
+    width: 50%;
+}
+footer>a{
+align-self: flex-end;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+

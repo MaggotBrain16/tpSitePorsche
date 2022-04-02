@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <script src="./script/index.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/wickedcss.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+    </style>
+  
+    <title>Porsche</title>
+</head>
+<body>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="./pages/details.html">911 GT3</a>
+      <a href="./pages/config.html">Configurateur</a>
+    </nav>
+    <header> 
+        <h1>PORSCHE LE MANS</h1>
+        <img src="./assets/porshelogo.png" alt="logo Porsche" class="logoPorsche">
+    </header>
+    <main>
+      <section class="sectCarousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./assets/caroussel/porsche_caroussel_2.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/caroussel/porsche_caroussel_1.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/caroussel/porsche_caroussel_3.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+        </div>
+        <h3>A découvrir</h3>
+      </section>  
+
+
+      <section id="sectLink">
+        <a href="https://www.porsche.com/france/models/911/911-gt3-models/911-gt3/" class="floatLink">911 GT3 RS</a>
+        <a href="./pages/details.html">
+          <div data-aos="fade-right">
+            <img src="./assets/porsche-model.png" alt="photo de Porsche" class="imgSecLink">
+          </div>
+        </a>
+      </section>
+
+    </main>
+    <footer>
+        <h3>Notre concession du Mans</h3>
+        <section class="sectFoot">
+          <img src="./assets/caroussel/porsche_caroussel_1.jpg" alt="space web" class="imgSpace">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17979.84128835793!2d0.1850557588848013!3d47.941811243936954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e28fb34ccb66ef%3A0xaa8b8dace926011e!2sPorsche+Experience+Center+Le+Mans!5e0!3m2!1sfr!2sfr!4v1537444839301"  frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
+        </section>
+        <a href="https://www.porsche.com/france/privacy-policy/">Mention légales</a>
+      </footer>
+ <script>
+      AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+main{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.imgPorsche{
+    width: 60%;  
+    margin: 2%;  
+}
+.couleur{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-top: 2%;
+}
+.btnR, .btnB, .btnY{
+    height: 50px ;
+    width: 50px;
+    border-radius: 8px;
+    margin-left: 240px;
+}
+.btnR{
+    background-color: #CC0033;
+}
+.btnB{
+    background-color: #006DD1;
+}
+.btnY{
+    background-color: #FFCC00;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+
+}
+.color>h5{
+    margin-top: 1%;
+}
+.motor{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+    width: 75%; 
+    font-size: 20px;
+}
+.priceP{
+    color: #CC0033;
+    margin-top: 2%;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+}
+.options{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+    flex-wrap: wrap;
+    width: 85%;
+
+}
+.sec1 .sec2{
+    display: flex;
+    flex-direction: column;
+}

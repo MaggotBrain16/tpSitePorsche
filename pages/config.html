@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <script src="../script/configurateur.js"></script>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+      
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/details.css">
+        <link rel="stylesheet" href="../styles/config.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+        </style>
+        <title>Configurateur</title>
+    </head>
+<body>
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="./details.html">911 GT3</a>
+        <a href=".config.html">Configurateur</a>
+    </nav>
+    <header> 
+        <img src="../assets/porsche-model.png" alt="logo Porsche" class="logoPorsche" data-aos="fade-right">
+        <h1>Porsche 911 GT3 RS</h1>
+    </header>
+    <span class="space"></span>
+    <main>
+    
+        <img src="../assets/colorP/blue.jpeg" alt="photo porsche" class="imgPorsche" id="imgPor">
+   
+        <section>
+            <h3>Caractéristiques</h3>
+            <div class="couleur">
+                <h5>Couleur</h5>
+                <button id="btnGreen" class="btn btnY" onclick="changeImg('yellow')"></button>
+                <button id="btnRed" class="btn btnR" onclick="changeImg('red')"></button>
+                <button id="btnBlue" class="btn btnB" onclick="changeImg('blue')"></button>
+            </div>
+        </section>
+        <section>
+            <div class="motor">
+                <h5>Motorisation</h5>
+                <input id="normal" type="radio" name>
+                <label for="normal">Normal</label>
+                <input id="sport" type="radio" name="sport">
+                <div class="price">
+                    <label for="sport">Sport</label>     
+                    <p class="priceP">20 000e</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="options">
+            <h5>Options</h5>
+            <div class="sec1">
+                <div>
+                    <input type="checkbox" id="jantesSport" name="jantesSport">
+                    <div class="price">
+                        <label for="jantesSport">Jantes Sport</label>
+                        <p class="priceP">5000e</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="intLuxe" name="intLuxe">
+                    <div class="price">
+                        <label for="intLuxe">Intérieur luxe</label>
+                        <p class="priceP">5 000e</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="sysAudio" name="sysAudio">
+                    <div class="price">
+                        <label for="sysAudio">Système audio plus</label>
+                        <p class="priceP">5 000e</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sec2">
+                <div>
+                    <input type="checkbox" id="pareBuffle" name="pareBuffle">
+                    <div class="price">
+                        <label for="pareBuffle">Pare Buffle</label>
+                        <p class="priceP">5 000e</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="roueSecours" name="roueSecours">
+                    <div class="price">
+                        <label for="roueSecours">Roue de secours</label>
+                        <p class="priceP">5 000e</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="volantSport" name="volantSport">
+                    <div class="price">
+                        <label for="volantSport">Volant sport</label>
+                        <p class="priceP">5 000e</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h3>Prix:</h3>
+        <h3 id="price"></h3>
+    </main>
+    <span class="space"></span>
+    <footer>
+        <h3>Notre concession du Mans</h3>
+        <section class="sectFoot">
+          <img src="../assets/caroussel/porsche_caroussel_2.jpg" alt="space web" class="imgSpace">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17979.84128835793!2d0.1850557588848013!3d47.941811243936954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e28fb34ccb66ef%3A0xaa8b8dace926011e!2sPorsche+Experience+Center+Le+Mans!5e0!3m2!1sfr!2sfr!4v1537444839301"  frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
+        </section>
+        <a href="https://www.porsche.com/france/privacy-policy/">Mention légales</a>
+      </footer>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>
